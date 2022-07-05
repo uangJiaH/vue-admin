@@ -1,11 +1,11 @@
 <template>
-<router-view></router-view>
+  <div>sidebar</div>
 </template>
 
 <script setup>
 
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 
 </style>
