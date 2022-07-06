@@ -7,6 +7,7 @@
       default-active="2"
       router
       text-color="#fff"
+      unique-opened
     >
 
       <sidebarmenus v-for="(item,index) in menuList" :key="index" :data="item"></sidebarmenus>

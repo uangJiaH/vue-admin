@@ -15,7 +15,7 @@ const publicRoutes = [
     redirect: '/index',
     meta: {
       title: '首页',
-      icon: 'like-outlined'
+      icon: 'reward'
     },
     children: [
       {
@@ -35,7 +35,7 @@ const privateRoutes = [
     redirect: '/sys/users',
     meta: {
       title: '系统管理',
-      icon: 'like-outlined'
+      icon: 'hamburger-closed'
     },
     children: [
       {
@@ -44,7 +44,7 @@ const privateRoutes = [
         component: () => import('@/views/usersList/index'),
         meta: {
           title: '用户管理',
-          icon: 'user-outlined'
+          icon: 'personnel'
         }
       },
       {
@@ -53,7 +53,7 @@ const privateRoutes = [
         component: () => import('@/views/roleList/index'),
         meta: {
           title: '角色管理',
-          icon: 'appstore-outlined'
+          icon: 'exit-fullscreen'
         }
       },
       {
@@ -62,7 +62,7 @@ const privateRoutes = [
         component: () => import('@/views/menusList'),
         meta: {
           title: '菜单管理',
-          icon: 'bars-outlined'
+          icon: 'table'
         }
       }
     ]
@@ -74,7 +74,7 @@ const privateRoutes = [
     component: () => import('../views/home'),
     meta: {
       title: '系统工具',
-      icon: 'setting-outlined'
+      icon: 'example'
     },
     children: [
       {
@@ -83,7 +83,7 @@ const privateRoutes = [
         component: () => import('@/views/dictsList/index'),
         meta: {
           title: '数字字典',
-          icon: 'file-search-outlined'
+          icon: 'article'
         }
       }
     ]
