@@ -1,7 +1,5 @@
 <template>
-
-  <router-view></router-view>
-
+  <div></div>
 </template>
 
 <script setup>
@@ -9,7 +7,5 @@
 </script>
 
 <style lang="scss" scoped>
-html, boyd, #app {
-  height: 100%;
-}
+
 </style>

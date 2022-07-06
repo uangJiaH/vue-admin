@@ -35,6 +35,7 @@ import { reactive, ref } from 'vue'
 import { validatePassword } from './rules'
 import { getCodeImg, login } from '@/api/login'
 import { useRouter } from 'vue-router'
+import { useStore } from 'vuex'
 
 const router = useRouter()
 const ruleForm = reactive({
@@ -43,6 +44,7 @@ const ruleForm = reactive({
   code: null,
   token: null
 })
+const store = useStore()
 const loginfrom = ref(null)
 const captchaImg = ref()
 const LoginFormref = reactive({
@@ -77,7 +79,9 @@ const handleLoginSubmit = () => {
     if (valid) {
       try {
         console.log(ruleForm, 'ruleForm')
-        await login(ruleForm)
+        const res = await login(ruleForm)
+        console.log(res, 'resres')
+        store.dispatch('user/getUserInfo')
         router.push('/')
       } catch (e) {
 

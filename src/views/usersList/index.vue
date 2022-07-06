@@ -1,7 +1,5 @@
 <template>
-
-  <router-view></router-view>
-
+  <div v-for="(item,index) in 100" :key="index">{{ index }}</div>
 </template>
 
 <script setup>
@@ -9,7 +7,5 @@
 </script>
 
 <style lang="scss" scoped>
-html, boyd, #app {
-  height: 100%;
-}
+
 </style>

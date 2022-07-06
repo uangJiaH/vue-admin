@@ -1,6 +1,8 @@
 <template>
 
-  <router-view></router-view>
+  <el-card>
+    <router-view></router-view>
+  </el-card>
 
 </template>
 
@@ -9,7 +11,5 @@
 </script>
 
 <style lang="scss" scoped>
-html, boyd, #app {
-  height: 100%;
-}
+
 </style>
